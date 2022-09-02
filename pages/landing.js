@@ -5,7 +5,7 @@ export default function Landing() {
     <>
       <link
         rel='stylesheet'
-        href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=optional'
+        href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0'
       />
       <Head>
         <title>landing page</title>
@@ -49,6 +49,48 @@ export default function Landing() {
       <main>
         <section className='bg-white py-16'>
           <h2 className='text-4xl text-center'>How It Works</h2>
+          <p className='text-center'>平台功能</p>
+          <ul className='flex flex-col items-center gap-6 text-center mt-8 md:flex-row'>
+            <li className='w-1/3 '>
+              <span className='material-symbols-outlined'>
+                <a className='text-4xl text-blue' href=''>
+                  assignment
+                </a>
+              </span>
+              <p className='font-bold mt-4'>Search Oportunities</p>
+              <p className='mt-3 text-gray-500 text-sm'>
+                關注任何職缺狀態
+                <br />
+                尋找機會
+              </p>
+            </li>
+            <li className='w-1/3 '>
+              <span className='material-symbols-outlined'>
+                <a href='' className='text-4xl text-blue'>
+                  insights
+                </a>
+              </span>
+              <p className='font-bold mt-4'>Reach Clients</p>
+              <p className='mt-3 text-gray-500 text-sm'>
+                接觸潛在人才
+                <br />
+                媒合合適人選
+              </p>
+            </li>
+            <li className='w-1/3 '>
+              <span className='material-symbols-outlined'>
+                <a href='' className='text-4xl text-blue'>
+                  savings
+                </a>
+              </span>
+              <p className='font-bold mt-4'>Get Rewarded</p>
+              <p className='mt-3 text-gray-500 text-sm'>
+                求職者與求才者的
+                <br />
+                雙贏交流環境
+              </p>
+            </li>
+          </ul>
         </section>
         <section className='bg-member h-[379px] bg-no-repeat bg-center bg-cover relative'>
           <div className='text-3xl absolute bg-white/50 p-5 right-3 top-6 md:bottom-12 md:left-[18%] md:right-auto md:top-auto'>
