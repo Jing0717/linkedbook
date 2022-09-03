@@ -13,13 +13,13 @@ export default function Home() {
         href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0'
       />
       <Head>
-        <title>landing page</title>
+        <title>Landing page</title>
       </Head>
       <header className='logo bg-no-repeat h-screen bg-cover bg-center relative'>
         <nav className='flex justify-between items-center pt-5 text-white px-3'>
-          <div className='bg-white text-blue-logo/80 text-4xl font-normal pr-4 pl-5 ml-3'>
+          <a href='' className='bg-white text-blue-logo/80 text-4xl font-normal pr-4 pl-5 ml-3'>
             Linkedbook
-          </div>
+          </a>
           <div className='flex items-center'>
             <a
               href='#'
@@ -28,19 +28,19 @@ export default function Home() {
             >
               <span className='material-symbols-outlined text-4xl'>menu</span>
             </a>
-            <a href='' className='hidden mr-14 md:block hover:text-blue-neutral'>
+            <a href='/register' className='hidden mr-14 md:block hover:text-blue-neutral'>
               註冊
             </a>
-            <button className='hidden ring-white ring-1 px-7 py-2 md:block hover:bg-white hover:text-blue '>
+            <a href='/login' className='hidden ring-white ring-1 px-7 py-2 md:block hover:bg-white hover:text-blue '>
               登入
-            </button>
+            </a>
           </div>
         </nav>
         {openedMenu && (
           <ul className='text-white float-right text-center text-blue bg-white mt-1 md:hidden'>
             <li>
               <a
-                href='#'
+                href='/login'
                 className='block text-sm px-20 py-2 hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
               >
                 登入
@@ -48,7 +48,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href='#'
+                href='/register'
                 className='block text-sm px-20 py-2  hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
               >
                 註冊
@@ -67,7 +67,7 @@ export default function Home() {
             <input
               type='text'
               placeholder='輸入你的電子信箱'
-              className='text-xl rounded-t py-2 px-[13px] placeholder-slate-300 md:rounded-none md:rounded-l'
+              className='text-xl text-black rounded-t py-2 px-[13px] placeholder-slate-300 md:rounded-none md:rounded-l'
             />
             <button className='bg-blue py-2 rounded-b md:rounded-none md:rounded-r md:px-7 hover:bg-blue-neutral'>
               開始吧!
@@ -251,12 +251,12 @@ export default function Home() {
               </ul>
               <ul className='flex mt-8'>
                 <li>
-                  <a className='px-7 py-2 bg-white text-blue' href=''>
+                  <a className='px-7 py-2 bg-white text-blue' href='/register'>
                     註冊
                   </a>
                 </li>
                 <li>
-                  <a className='px-7 py-2 ring-2 ml-3' href=''>
+                  <a className='px-7 py-2 ring-2 ml-3' href='/login'>
                     登入
                   </a>
                 </li>
