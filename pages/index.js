@@ -2,8 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+  const [openedMenu, setOpenedMenu] = useState(false);
   return (
     <>
       <link
@@ -19,17 +21,41 @@ export default function Home() {
             Linkedbook
           </div>
           <div className='flex items-center'>
-            <a href='#' className=' md:hidden pr-3 md:hidden'>
+            <a
+              href='#'
+              className='pr-3 md:hidden'
+              onClick={() => setOpenedMenu(!openedMenu)}
+            >
               <span className='material-symbols-outlined text-4xl'>menu</span>
             </a>
-            <a href='' className='hidden mr-14 md:block'>
+            <a href='' className='hidden mr-14 md:block hover:text-blue-neutral'>
               註冊
             </a>
-            <button className='hidden ring-white ring-1 px-7 py-2 md:block '>
+            <button className='hidden ring-white ring-1 px-7 py-2 md:block hover:bg-white hover:text-blue '>
               登入
             </button>
           </div>
         </nav>
+        {openedMenu && (
+          <ul className='text-white float-right text-center text-blue bg-white mt-1 md:hidden'>
+            <li>
+              <a
+                href='#'
+                className='block text-sm px-20 py-2 hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
+              >
+                登入
+              </a>
+            </li>
+            <li>
+              <a
+                href='#'
+                className='block text-sm px-20 py-2  hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
+              >
+                註冊
+              </a>
+            </li>
+          </ul>
+        )}
         <section className='absolute top-1/3 left-1/2 ml-[-148px] text-white md:ml-[-312px]'>
           <h1 className='text-center text-6xl text-white/80 leading-[1.2] md:text-9xl'>
             Linkedbook
@@ -43,7 +69,7 @@ export default function Home() {
               placeholder='輸入你的電子信箱'
               className='text-xl rounded-t py-2 px-[13px] placeholder-slate-300 md:rounded-none md:rounded-l'
             />
-            <button className='bg-blue py-2 rounded-b md:rounded-none md:rounded-r md:px-7'>
+            <button className='bg-blue py-2 rounded-b md:rounded-none md:rounded-r md:px-7 hover:bg-blue-neutral'>
               開始吧!
             </button>
           </div>
@@ -114,13 +140,13 @@ export default function Home() {
                 className='object-cover h-[455px] w-full'
               />
               <div className='flex flex-col lg:ml-3'>
-                <p className='bg-[#334657] py-8 px-7 mt-3 lg:min-w-max lg:mt-0'>
+                <div className='bg-[#334657] py-8 px-7 mt-3 lg:min-w-max lg:mt-0'>
                   讓合適的人選
                   <br />
                   知道
                   <br />
                   <span className='text-blue-light'>最新</span>職缺動態
-                </p>
+                </div>
                 <img
                   src='/linkedbook_people02.png'
                   alt='linkedbook_people02'
@@ -130,14 +156,14 @@ export default function Home() {
             </div>
 
             <div className='flex flex-col lg:flex-row  mt-3 lg:mt-14'>
-              <p className='bg-[#334657] py-8 px-7 lg:mr-6 lg:max-h-60'>
+              <div className='bg-[#334657] py-8 px-7 lg:mr-6 lg:max-h-60'>
                 <span className='text-blue-light'>掌握</span>職場動向
                 <br />
                 <p className='text-base mt-6'>
                   從故事，到通訊等，Linkedbook <br />
                   盡是掌握產業最新討論的工具。
                 </p>
-              </p>
+              </div>
               <img
                 src='/linkedbook_hands.png'
                 alt='linkedbook_hands'
