@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function login() {
   return (
@@ -61,24 +62,21 @@ export default function login() {
 
                 <div className='flex items-center justify-between'>
                   <div className='flex items-center'>
-                    <a
-                      href='#'
-                      className='font-medium text-blue-dark hover:text-blue-neutral underline'
-                    >
-                      Sign Up
-                    </a>
+                    <Link href='#'>
+                      <a className='font-medium text-blue-dark hover:text-blue-neutral underline'>
+                        Sign Up
+                      </a>
+                    </Link>
                   </div>
 
                   <div className='text-sm'>
-                    <a
-                      href='#'
-                      className='font-medium text-blue-dark hover:text-blue-neutral underline'
-                    >
-                      Forgot your password?
-                    </a>
+                    <Link href='#'>
+                      <a className='font-medium text-blue-dark hover:text-blue-neutral underline'>
+                        Forgot your password?
+                      </a>
+                    </Link>
                   </div>
                 </div>
-
                 <div>
                   <button
                     type='submit'
@@ -107,40 +105,48 @@ export default function login() {
                 <p className='text-gray-400 text-center'>Copyright © 2022 </p>
                 <ul className='flex space-x-8 mt-5 justify-center'>
                   <li>
-                    <a href='#'>
-                      <img
-                        src='./google.png'
-                        alt='google'
-                        className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
-                      />
-                    </a>
+                    <Link href='#'>
+                      <a>
+                        <img
+                          src='./google.png'
+                          alt='google'
+                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                        />
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
-                      <img
-                        src='./line.png'
-                        alt='line'
-                        className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
-                      />
-                    </a>
+                    <Link href='#'>
+                      <a>
+                        <img
+                          src='./line.png'
+                          alt='line'
+                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                        />
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
-                      <img
-                        src='./fb.png'
-                        alt='fb'
-                        className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
-                      />
-                    </a>
+                    <Link href='#'>
+                      <a>
+                        <img
+                          src='./fb.png'
+                          alt='fb'
+                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                        />
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
-                      <img
-                        src='./github.png'
-                        alt='github'
-                        className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
-                      />
-                    </a>
+                    <Link href='#'>
+                      <a>
+                        <img
+                          src='./github.png'
+                          alt='github'
+                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                        />
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

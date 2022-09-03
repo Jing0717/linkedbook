@@ -17,42 +17,47 @@ export default function Home() {
       </Head>
       <header className='logo bg-no-repeat h-screen bg-cover bg-center relative'>
         <nav className='flex justify-between items-center pt-5 text-white px-3'>
-          <a href='' className='bg-white text-blue-logo/80 text-4xl font-normal pr-4 pl-5 ml-3'>
-            Linkedbook
-          </a>
+          <Link href=''>
+            <a className='bg-white text-blue-logo/80 text-4xl font-normal pr-4 pl-5 ml-3'>
+              Linkedbook
+            </a>
+          </Link>
           <div className='flex items-center'>
-            <a
-              href='#'
-              className='pr-3 md:hidden'
-              onClick={() => setOpenedMenu(!openedMenu)}
-            >
-              <span className='material-symbols-outlined text-4xl'>menu</span>
-            </a>
-            <a href='/register' className='hidden mr-14 md:block hover:text-blue-neutral'>
-              註冊
-            </a>
-            <a href='/login' className='hidden ring-white ring-1 px-7 py-2 md:block hover:bg-white hover:text-blue '>
-              登入
-            </a>
+            <Link href='#'>
+              <a
+                className='pr-3 md:hidden'
+                onClick={() => setOpenedMenu(!openedMenu)}
+              >
+                <span className='material-symbols-outlined text-4xl'>menu</span>
+              </a>
+            </Link>
+            <Link href='/register'>
+              <a className='hidden mr-14 md:block hover:text-blue-neutral'>
+                註冊
+              </a>
+            </Link>
+            <Link href='/login'>
+              <a className='hidden ring-white ring-1 px-7 py-2 md:block hover:bg-white hover:text-blue '>
+                登入
+              </a>
+            </Link>
           </div>
         </nav>
         {openedMenu && (
           <ul className='text-white float-right text-center text-blue bg-white mt-1 md:hidden'>
             <li>
-              <a
-                href='/login'
-                className='block text-sm px-20 py-2 hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
-              >
-                登入
-              </a>
+              <Link href='/login'>
+                <a className='block text-sm px-20 py-2 hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'>
+                  登入
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='/register'
-                className='block text-sm px-20 py-2  hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'
-              >
-                註冊
-              </a>
+              <Link href='/register'>
+                <a className='block text-sm px-20 py-2  hover:text-white hover:bg-blue-neutral hover:border-none ease-in duration-300'>
+                  註冊
+                </a>
+              </Link>
             </li>
           </ul>
         )}
@@ -82,9 +87,9 @@ export default function Home() {
           <ul className='flex flex-col items-center gap-6 text-center mt-8 md:flex-row'>
             <li className='w-1/3 '>
               <span className='material-symbols-outlined'>
-                <a className='text-4xl text-blue' href=''>
-                  assignment
-                </a>
+                <Link href=''>
+                  <a className='text-4xl text-blue'>assignment</a>
+                </Link>
               </span>
               <p className='font-bold mt-4'>Search Oportunities</p>
               <p className='mt-3 text-gray-500 text-sm'>
@@ -95,9 +100,9 @@ export default function Home() {
             </li>
             <li className='w-1/3 '>
               <span className='material-symbols-outlined'>
-                <a href='' className='text-4xl text-blue'>
-                  insights
-                </a>
+                <Link href=''>
+                  <a className='text-4xl text-blue'>insights</a>
+                </Link>
               </span>
               <p className='font-bold mt-4'>Reach Clients</p>
               <p className='mt-3 text-gray-500 text-sm'>
@@ -108,9 +113,9 @@ export default function Home() {
             </li>
             <li className='w-1/3 '>
               <span className='material-symbols-outlined'>
-                <a href='' className='text-4xl text-blue'>
-                  savings
-                </a>
+                <Link href=''>
+                  <a className='text-4xl text-blue'>savings</a>
+                </Link>
               </span>
               <p className='font-bold mt-4'>Get Rewarded</p>
               <p className='mt-3 text-gray-500 text-sm'>
@@ -229,36 +234,44 @@ export default function Home() {
             <div className='flex flex-col items-center'>
               <ul className='flex gap-4 mt-40'>
                 <li>
-                  <a href='#'>
-                    <img src='./google.png' alt='' className='bg-google' />
-                  </a>
+                  <Link href='#'>
+                    <a>
+                      <img src='./google.png' alt='' className='bg-google' />
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#'>
-                    <img src='./line.png' alt='' />
-                  </a>
+                  <Link href='#'>
+                    <a>
+                      <img src='./line.png' alt='' />
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#'>
-                    <img src='./fb.png' alt='' />
-                  </a>
+                  <Link href='#'>
+                    <a>
+                      <img src='./fb.png' alt='' />
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#'>
-                    <img src='./github.png' alt='' />
-                  </a>
+                  <Link href='#'>
+                    <a>
+                      <img src='./github.png' alt='' />
+                    </a>
+                  </Link>
                 </li>
               </ul>
               <ul className='flex mt-8'>
                 <li>
-                  <a className='px-7 py-2 bg-white text-blue' href='/register'>
-                    註冊
-                  </a>
+                  <Link href='/register'>
+                    <a className='px-7 py-2 bg-white text-blue'>註冊</a>
+                  </Link>
                 </li>
                 <li>
-                  <a className='px-7 py-2 ring-2 ml-3' href='/login'>
-                    登入
-                  </a>
+                  <Link href='/login'>
+                    <a className='px-7 py-2 ring-2 ml-3'>登入</a>
+                  </Link>
                 </li>
               </ul>
             </div>
