@@ -62,7 +62,7 @@ export default function login() {
 
                 <div className='flex items-center justify-between'>
                   <div className='flex items-center'>
-                    <Link href='#'>
+                    <Link href='/register'>
                       <a className='font-medium text-blue-dark hover:text-blue-neutral underline'>
                         Sign Up
                       </a>
