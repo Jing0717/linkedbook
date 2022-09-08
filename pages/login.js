@@ -20,7 +20,7 @@ export default function login() {
           <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
             <div className='w-full max-w-md space-y-8'>
               <div>
-                <div className='bg-blue-logo text-white text-center text-4xl font-normal px-4 py-1'>
+                <div className='bg-blue text-white text-center text-4xl font-normal px-4 py-1'>
                   Linkedbook
                 </div>
                 <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
@@ -80,7 +80,7 @@ export default function login() {
                 <div>
                   <button
                     type='submit'
-                    className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue-logo py-2 px-4 text-sm font-medium text-white hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   >
                     <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
                       <svg
@@ -110,7 +110,7 @@ export default function login() {
                         <img
                           src='./google.png'
                           alt='google'
-                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                          className='bg-gray-400 rounded p-1 hover:bg-red-500'
                         />
                       </a>
                     </Link>
@@ -121,7 +121,7 @@ export default function login() {
                         <img
                           src='./line.png'
                           alt='line'
-                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                          className='bg-gray-400 rounded p-1 hover:bg-green-500'
                         />
                       </a>
                     </Link>
@@ -132,7 +132,7 @@ export default function login() {
                         <img
                           src='./fb.png'
                           alt='fb'
-                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                          className='bg-gray-400 rounded p-1 hover:bg-blue-500'
                         />
                       </a>
                     </Link>
@@ -143,7 +143,7 @@ export default function login() {
                         <img
                           src='./github.png'
                           alt='github'
-                          className='bg-gray-400 rounded p-1 hover:bg-blue-neutral'
+                          className='bg-gray-400 rounded p-1 hover:bg-gray-600'
                         />
                       </a>
                     </Link>

@@ -11,7 +11,7 @@ export default function Register() {
         <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
           <div className='w-full max-w-md space-y-4'>
             <div>
-              <div className='bg-blue-logo text-white text-center text-4xl font-normal px-4 py-1'>
+              <div className='bg-blue text-white text-center text-4xl font-normal px-4 py-1'>
                 Linkedbook
               </div>
               <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
@@ -91,7 +91,7 @@ export default function Register() {
               <div>
                 <button
                   type='submit'
-                  className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue-logo py-2 px-4 text-sm font-medium text-white hover:bg-blue-neutral focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                  className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-blue-neutral focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                 >
                   <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
                     <svg
@@ -108,14 +108,14 @@ export default function Register() {
                       />
                     </svg>
                   </span>
-                  Sign up
+                  註冊
                 </button>
                 <div className='flex justify-between items-center mt-3'>
                   <hr className='w-full' />
                   <span className='p-2 text-gray-400 mb-1'>OR</span>
                   <hr className='w-full' />
                 </div>
-                <button className='uppercase py-2 mt-3 text-white w-full text-center rounded-md bg-blue-800 hover:bg-blue-900 flex items-center relative justify-center'>
+                <button className='uppercase py-2 mt-3 text-white w-full text-center rounded-md bg-blue-600 hover:bg-blue-700 flex items-center relative justify-center'>
                   <img
                     src='./fb.png'
                     alt='fb'
@@ -123,7 +123,7 @@ export default function Register() {
                   />
                   <span>facebook</span>
                 </button>
-                <button className='uppercase py-2 mt-3 text-white w-full rounded-md bg-red-800 hover:bg-red-900 flex items-center relative justify-center'>
+                <button className='uppercase py-2 mt-3 text-white w-full rounded-md bg-red-600 hover:bg-red-700 flex items-center relative justify-center'>
                   <img
                     src='./google.png'
                     alt='google'
@@ -131,7 +131,7 @@ export default function Register() {
                   />
                   <span className=''>Google</span>
                 </button>
-                <button className='uppercase py-2 mt-3 text-white w-full rounded-md bg-green-800 hover:bg-green-900 flex items-center relative justify-center'>
+                <button className='uppercase py-2 mt-3 text-white w-full rounded-md bg-green-600 hover:bg-green-700 flex items-center relative justify-center'>
                   <img
                     src='./line.png'
                     alt='line'
