@@ -10,11 +10,14 @@ export default function login() {
       </Head>
       <main className='flex'>
         <section className='hidden sm:block sm:w-2/5 lg:w-3/5'>
-          <img
-            className='h-screen object-cover w-full'
-            src='https://source.unsplash.com/random'
-            alt='random image'
-          />
+          <div className='relative h-screen object-cover w-full'>
+            <Image
+              layout='fill'
+              objectFit='cover'
+              src='https://source.unsplash.com/random'
+              alt='random image'
+            />
+          </div>
         </section>
         <section className='w-full sm:w-3/5 lg:w-2/5 h-screen'>
           <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
@@ -78,37 +81,38 @@ export default function login() {
                   </div>
                 </div>
                 <div>
-                  <button
-                    type='submit'
-                    className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                  >
-                    <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
-                      <svg
-                        className='h-5 w-5 text-white group-hover:text-blue-neutral'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          fillRule='evenodd'
-                          d='M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z'
-                          clipRule='evenodd'
-                        />
-                      </svg>
-                    </span>
-                    Sign in
-                  </button>
+                  <Link href='/home'>
+                    <a className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
+                      <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
+                        <svg
+                          className='h-5 w-5 text-white group-hover:text-blue-neutral'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                          aria-hidden='true'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                      </span>
+                      Sign in
+                    </a>
+                  </Link>
                 </div>
               </form>
               <div>
                 <p className='text-gray-400 text-center'>Copyright © 2022 </p>
                 <ul className='flex space-x-8 mt-5 justify-center'>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./google.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/google.png'
                           alt='google'
                           className='bg-gray-400 rounded p-1 hover:bg-red-500'
                         />
@@ -116,10 +120,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./line.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/line.png'
                           alt='line'
                           className='bg-gray-400 rounded p-1 hover:bg-green-500'
                         />
@@ -127,10 +133,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./fb.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/fb.png'
                           alt='fb'
                           className='bg-gray-400 rounded p-1 hover:bg-blue-500'
                         />
@@ -138,10 +146,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./github.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/github.png'
                           alt='github'
                           className='bg-gray-400 rounded p-1 hover:bg-gray-600'
                         />
