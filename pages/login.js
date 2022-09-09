@@ -10,11 +10,14 @@ export default function login() {
       </Head>
       <main className='flex'>
         <section className='hidden sm:block sm:w-2/5 lg:w-3/5'>
-          <img
-            className='h-screen object-cover w-full'
-            src='https://source.unsplash.com/random'
-            alt='random image'
-          />
+          <div className='relative h-screen object-cover w-full'>
+            <Image
+              layout='fill'
+              objectFit='cover'
+              src='https://source.unsplash.com/random'
+              alt='random image'
+            />
+          </div>
         </section>
         <section className='w-full sm:w-3/5 lg:w-2/5 h-screen'>
           <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
@@ -78,8 +81,8 @@ export default function login() {
                   </div>
                 </div>
                 <div>
-                  <button
-                    type='submit'
+                  <a
+                    href='/home'
                     className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-blue-light focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   >
                     <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
@@ -98,17 +101,19 @@ export default function login() {
                       </svg>
                     </span>
                     Sign in
-                  </button>
+                  </a>
                 </div>
               </form>
               <div>
                 <p className='text-gray-400 text-center'>Copyright © 2022 </p>
                 <ul className='flex space-x-8 mt-5 justify-center'>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./google.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/google.png'
                           alt='google'
                           className='bg-gray-400 rounded p-1 hover:bg-red-500'
                         />
@@ -116,10 +121,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./line.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/line.png'
                           alt='line'
                           className='bg-gray-400 rounded p-1 hover:bg-green-500'
                         />
@@ -127,10 +134,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./fb.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/fb.png'
                           alt='fb'
                           className='bg-gray-400 rounded p-1 hover:bg-blue-500'
                         />
@@ -138,10 +147,12 @@ export default function login() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link href='/home'>
                       <a>
-                        <img
-                          src='./github.png'
+                        <Image
+                          width={'40px'}
+                          height={'40px'}
+                          src='/github.png'
                           alt='github'
                           className='bg-gray-400 rounded p-1 hover:bg-gray-600'
                         />

@@ -9,10 +9,10 @@ module.exports = {
     container: {
       center: true, // 水平置中
       padding: '1rem', // 水平間距
-      screens: {
-        // sm: '600px',
-        md: '926px',
-      },
+      // screens: {
+      //   // sm: '600px',
+      //   md: '926px',
+      // },
     },
     extend: {
       colors: {
@@ -25,6 +25,7 @@ module.exports = {
         },
         gray: {
           holder: '#D1D7DD',
+          bg: '#F3F2EF',
         },
       },
       backgroundImage: {
