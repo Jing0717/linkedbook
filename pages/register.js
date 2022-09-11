@@ -22,11 +22,11 @@ export default function Register() {
               <input type='hidden' name='remember' value='true' />
               <div className='-space-y-px rounded-md shadow-sm'>
                 <div>
-                  <label htmlFor='email-address' className='sr-only'>
+                  <label htmlFor='email-name' className='sr-only'>
                     請輸入姓名
                   </label>
                   <input
-                    id='email-address'
+                    id='email-name'
                     name='email'
                     type='email'
                     autoComplete='email'
